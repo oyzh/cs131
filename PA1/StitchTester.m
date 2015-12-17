@@ -23,9 +23,10 @@ clc; close all; clc;
 %imgList = dir('./data/campus*.jpg');
 %saveFileName = 'campus.jpg';
 
-imgList = dir('./data/pine*.jpg');
-saveFileName = 'pine.jpg';
-
+%imgList = dir('./data/pine*.jpg');
+%saveFileName = 'pine.jpg';
+imgList = dir('./data/office*.jpg');
+saveFileName = 'office.jpg';
 
 %% Add path
 addpath('KeypointDetect');

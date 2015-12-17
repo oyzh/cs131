@@ -1,0 +1,10 @@
+x = -6:0.05:6;
+y1 = LoG(x,1);
+y2 = DoG(x,1.2,1);
+y4 = DoG(x,1.4,1);
+y6 = DoG(x,1.6,1);
+y8 = DoG(x,1.8,1);
+plot(x,y1,x,y2,x,y4,x,y6,x,y8);
+title('DoG vs LoG');
+legend('LoG','DoG k=1.2','DoG k=1.4','DoG k=1.6','DoG k=1.8','sigma=1');
+text(-4,0.2,'sigma=1');
